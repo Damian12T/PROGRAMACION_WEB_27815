@@ -1,0 +1,10 @@
+.btn-uno{
+
+    background-color: darkgreen;
+    color: aliceblue;
+    border: 1px solid greenyellow;
+    padding:  0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
