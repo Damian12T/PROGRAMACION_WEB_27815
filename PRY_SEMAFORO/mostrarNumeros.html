@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monstrar numeros del 1 al 10</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1> MOSTRAR NUMEROS DEL 1 al 10 </h1>
+        <br><br>
+
+        <div class="mb-3">
+            <label for="txt_numero_inicio" class="form-label">Ingrese numero inicio</label>
+            <input
+                type="number"
+                class="form-control"
+                name=""
+                id="txt_numero_inicio"
+                aria-describedby="helpId"
+                placeholder="2"
+                autofocus
+            />
+            <small id="helpId" class="form-text text-muted">Ejemplo: 2</small>
+        </div>
+
+        <div class="mb-3">
+            <label for="txt_numero_final" class="form-label">Ingrese numero final</label>
+            <input
+                type="number"
+                class="form-control"
+                name=""
+                id="txt_numero_final"
+                aria-describedby="helpId"
+                placeholder="20"
+                autofocus
+            />
+            <small id="helpId" class="form-text text-muted">Ejemplo: 20</small>
+        </div>
+        
+        <div class="d-grid gap-2">
+            <button
+                type="button"
+                name=""
+                id="btn_mostrar_numeros"
+                class="btn btn-primary"
+            >
+                MOSTRAR NUMERO
+            </button>
+        </div>
+        <hr>
+        <p>Resultado: </p>
+        <div id="txt_mostrar_resultado"></div>
+        
+    </div>
+
+    <script src="./public/js/semaforo_iterativo.js"></script>
+</body>
+</html>

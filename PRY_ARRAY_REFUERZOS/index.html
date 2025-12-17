@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY REFUERZO</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h1>Listado de mis tareas</h1>
+        <hr>
+
+        <div class="form-floating mb-3">
+            <input
+                type="text"
+                class="form-control"
+                id="txt_nombre_tarea"
+                placeholder="Ingrese una tarea"
+                autofocus
+            >
+            <label for="txt_nombre_tarea">Ingrese una tarea</label>
+        </div>
+
+        <div class="d-grid gap-2 mb-2">
+            <button
+                type="button"
+                id="btn_guardar_tarea"
+                class="btn btn-success"
+            >
+                Guardar tarea
+            </button>
+        </div>
+
+ 
+
+         
+        </div>
+
+        <div class="list-group" id="lista_tareas"></div>
+
+    </div>
+
+    <script src="./public/js/tareas.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
