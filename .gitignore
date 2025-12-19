@@ -1,0 +1,14 @@
+# Node / Web
+node_modules/
+dist/
+build/
+coverage/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Sistema Windows
+Thumbs.db
