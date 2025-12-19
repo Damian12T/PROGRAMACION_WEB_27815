@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+</head>
+<body>
+
+    <header>
+     <h1>SELECT FOMRULARIOS</h1>   
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <label for="Ingrese su id"></label>
+            <input type="text" id="id" name="id " placeholder="INGRESE SU ID " pattern="[A-Z]{3}[0-9]{4}" required>
+                <!--SELECT EN FORM-->
+            <label for="lista_frutas"> Lista de Frutas</label>
+            <input type="hidden" value="1726519513" name="NUUMERO CEDULA">
+
+            <select name="lista_frutas" id="lista_frutas" required autofocus>
+                <option value=""></option>
+                <option value="Naranja">Naranja</option>
+                <option value="Pera">Pera</option>
+                <option value="Manzana">Manzana</option>
+                <option value="Uva">Uva</option>
+                <option value="zapato" disabled>Zapato</option>
+            </select>
+            <br><br>
+            <label for="musicas_favoritas">SELECCIONE MUSICA FAVORITAS</label>
+            <select name="musicas_favoritas []" id="musicas_favoritas" multiple>
+                <option value=""></option>
+                <option value="MAKINE"> MAKINE</option>
+                <option value="WASH"> WASH</option>
+                <option value="LIKIN_PARK"> LIKIN PARK</option>
+                <option value="AVENTURA">AVENTURA</option>
+                <option value="VITAMINA">VITAMINA</option>
+
+                <optgroup title="LINKI PARK" label="LINKI PARK">
+                <option value=""></option>
+                <option value="MAKINE"> MAKINE</option>
+                <option value="WASH"> WASH</option>
+                <option value="LIKIN_PARK"> LIKIN PARK</option>
+                <option value="AVENTURA">AVENTURA</option>
+                <option value="VITAMINA">VITAMINA</option>
+
+                </optgroup>
+                
+                <optgroup title="AVENTURA" label="AVENTURA">
+                <option value=""></option>
+                <option value="MAKINE"> MAKINE</option>
+                <option value="WASH"> WASH</option>
+                <option value="LIKIN_PARK"> LIKIN PARK</option>
+                <option value="AVENTURA">AVENTURA</option>
+                <option value="VITAMINA">VITAMINA</option>
+
+                </optgroup>
+                
+                <optgroup title="JOMBRIEL" label="JOMBRIEL">
+                     <option value=""></option>
+                <option value="MAKINE"> MAKINE</option>
+                <option value="WASH"> WASH</option>
+                <option value="LIKIN_PARK"> LIKIN PARK</option>
+                <option value="AVENTURA">AVENTURA</option>
+                <option value="VITAMINA">VITAMINA</option>
+
+                </optgroup>
+                
+                <optgroup title="MAKINE" label="MAKINE">
+                     <option value=""></option>
+                <option value="MAKINE"> MAKINE</option>
+                <option value="WASH"> WASH</option>
+                <option value="LIKIN_PARK"> LIKIN PARK</option>
+                <option value="AVENTURA">AVENTURA</option>
+                <option value="VITAMINA">VITAMINA</option>
+
+                </optgroup>
+                <optgroup title="WASH" label="WASH">
+                     <option value=""></option>
+                <option value="MAKINE"> MAKINE</option>
+                <option value="WASH"> WASH</option>
+                <option value="LIKIN_PARK"> LIKIN PARK</option>
+                <option value="AVENTURA">AVENTURA</option>
+                <option value="VITAMINA">VITAMIN80A</option>
+
+                </optgroup>
+
+            </select>
+            <br>
+            <!--TEXT AREA-->
+            <label for="descripcion">INGRESE SU DESCRIPCION</label>
+
+            <textarea name="descripcion" required id="descripcion"  rows="5" cols="80">
+                HOLA CHICOS Y CHICAS DE PROGRAMACION WEB
+
+            </textarea>
+            <button type="submit"> ENVIAR AL SERVIDOR</button>
+
+
+
+
+
+
+        </form>
+    </main>
+    <footer>
+        <p>C 2025</p>
+    </footer>
+    
+</body>
+</html>
