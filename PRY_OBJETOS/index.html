@@ -5,29 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OBJETOS EN JAVASCRIPT</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    
 </head>
-<body class="bg-dark text-white text-center">
-    
-    <div class="comtainer">
-        <h1>OBJETOS EN JS</h1>
-        <hr>
-        <div class="card">
-            <div class="card-header" id="header_info">
 
-            </div>
-            <div class="card-body" id="body_info">
-                <h4 class="card-title"></h4>
-                <p class="card-text"></p>
-            </div>
-            <div class="card-footer text-muted" id="foot_info">
+<body class="bg-dark text-white text-center">
+
+    <div class="container mt-5">
+        <h1 class="mb-4">OBJETOS EN JS</h1>
+        <hr class="mb-4">
+
+        <!-- CONTENEDOR DE PRESENTACIÓN -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <!-- CARD ORIGINAL -->
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white" id="header_info"></div>
+
+                    <div class="card-body text-dark" id="body_info">
+                        <!-- TEXTO DESCRIPTIVO -->
+                        <div class="mb-3" id="descripcion"></div>
+
+                        <!-- LISTA DE ASIGNATURAS -->
+                        <ul class="list-group list-group-flush" id="mis_asignaturas"></ul>
+                    </div>
+
+                    <div class="card-footer text-muted" id="foot_info">
+                        Información del objeto persona
+                    </div>
+                </div>
 
             </div>
         </div>
         
     </div>
-    
-
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./public/js/objetos.js"></script>

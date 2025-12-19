@@ -1,31 +1,39 @@
-// declarar un object
-
 var persona = {
-    cedula: "1726192618",
-    nombres: "EDGAR DAMIAN",
-    apellidos: "TOSCANO CORO",
+    cedula: "1726519513",
+    nombres: "Damian Toscano",
+    apellidos: "Toscano Coro",
     edad: 21,
-    estatura: 1.81,
+    estatura: 1.70,
     es_ecuatoriano: true,
     mis_asignaturas: [
-                        'programacion web',
-                        'base de datos',
-                        'metodos numericos'
-                    ],
+        'Programacion Web',
+        'Base de Datos',
+        'Metodos Numericos'
+    ],
     fn_saludar: function(){
-        return `Hola mi nombre es ${this.nombres} ${this.apellidos}`;
+        return `Hola, soy ${this.nombres} ${this.apellidos}`;
     },
-
-    fn_calcularEdad:function(){
-        console.log(this.edad>=18 ?'Es mayor de edad': 'Es menor de edad');
+    fn_calcularEdad: function(){
+        return this.edad >= 18 ? 'Mayor de edad' : 'Menor de edad';
     }
-
-
 };
-//persona.cedula;
-//persona.mis_asignaturas[1];
-//persona.fn_saludar();
-//persona.fn_calcularEdad();
 
-var header_info = document.getElementById('header_info');
-header_info.innerHTML=`${persona.fn_saludar()}`
+// Header
+document.getElementById('header_info').textContent = persona.fn_saludar();
+
+// Descripción
+document.getElementById('descripcion').textContent =
+    `Soy ${persona.nombres} ${persona.apellidos}, ` +
+    `soy ${persona.es_ecuatoriano ? 'ecuatoriano' : 'extranjero'}, ` +
+    `tengo ${persona.edad} años, ` +
+    `mido ${persona.estatura} m y mis asignaturas son:`;
+
+// Asignaturas
+var mis_asignaturas = document.getElementById('mis_asignaturas');
+
+persona.mis_asignaturas.forEach(function(asignatura){
+    let li = document.createElement('li');
+    li.classList.add('list-group-item');
+    li.textContent = asignatura;
+    mis_asignaturas.appendChild(li);
+});
